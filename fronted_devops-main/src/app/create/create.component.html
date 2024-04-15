@@ -4,12 +4,12 @@
 
 <form (submit)="addbloc()">
   <div>
-    <label for="nom">Name:</label>
-    <input type="text" id="numero" [(ngModel)]="bloc.numbloc" name="numero" required>
+    <label for="nomBloc">Name:</label>
+    <input type="text" id="numero" [(ngModel)]="bloc.nomBloc" name="numero" required>
   </div>
   <div>
-    <label for="adresse">Address:</label>
-    <input type="text" id="statut" [(ngModel)]="bloc.statut" name="statut" required>
+    <label for="adresse">Capacite:</label>
+    <input type="text" id="capaciteBloc" [(ngModel)]="bloc.capaciteBloc" name="capaciteBloc" required>
   </div>
   <button type="submit">Add</button>
 </form>

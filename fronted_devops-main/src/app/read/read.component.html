@@ -7,14 +7,14 @@
 <table>
     <tr>
       <th>ID</th>
-      <th>Numéro de bloc</th>
-      <th>Statut</th>
+      <th>nomBloc</th>
+      <th>capaciteBloc</th>
       <th>Actions</th>
     </tr>
     <tr *ngFor="let bloc of blocs">
       <td>{{ bloc.id }}</td>
-      <td>{{ bloc.numerobloc }}</td>
-      <td>{{ bloc.statut }}</td>
+      <td>{{ bloc.nomBloc }}</td>
+      <td>{{ bloc.capaciteBloc }}</td>
       <td>
         <button (click)="goToUpdate(bloc.idbloc)">Modifier</button>
         <button (click)="delete(bloc.idbloc)">Delete</button>

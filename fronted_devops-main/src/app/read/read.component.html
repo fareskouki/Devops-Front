@@ -1,0 +1,25 @@
+<!-- src/app/read/read.component.html -->
+
+<h2>blocs List</h2>
+
+<button (click)="goToAdd()">Add bloc</button>
+
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Numéro de bloc</th>
+      <th>Statut</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let bloc of blocs">
+      <td>{{ bloc.id }}</td>
+      <td>{{ bloc.numerobloc }}</td>
+      <td>{{ bloc.statut }}</td>
+      <td>
+        <button (click)="goToUpdate(bloc.idbloc)">Modifier</button>
+        <button (click)="delete(bloc.idbloc)">Delete</button>
+      </td>
+      
+    </tr>
+  </table>
+  

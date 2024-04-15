@@ -1,0 +1,17 @@
+<!-- update.component.html -->
+
+<h2>Update bloc</h2>
+
+<form (submit)="updatebloc()">
+  <div>
+    <label for="numbloc">Numéro de bloc:</label>
+    <input type="text" id="numbloc" [(ngModel)]="bloc.numerobloc" name="numbloc" required>
+</div>
+
+  <div>
+    <label for="statut">Statut:</label>
+    <input type="text" id="statut" [(ngModel)]="bloc.statut" name="statut" required>
+  </div>
+  <!-- Add other input fields for other bloc properties -->
+  <button type="submit">Update</button>
+</form>
